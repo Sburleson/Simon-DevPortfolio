@@ -1,5 +1,6 @@
 
 <script>
+    import { base } from '$app/paths';
     import Icon from '@iconify/svelte';
     import githubIcon from '@iconify-icons/simple-icons/github';
 
@@ -7,20 +8,22 @@
     let bio = "I'm a software engineer with a passion for Sports, the Outdoors, and Video Games. I enjoy creating projects that combine these interests as shown in my projects.";
 
     let projects = [
-        {
-        title: "Statistics Website",
-        description: "A website that enables players to upload Replay files to cloud storage, process them through a Rust based script, and display the extracted data in a meaningful way.",
-        github: "https://github.com/Sburleson/WoTFirebase",
-        images: ["/images/portfolio1.png"],
-        website: "https://wot-insight.web.app"
-        },
-        {
-        title: "Track & Field Timing using machine learning",
-        description: "A project that uses machine learning to analyze video footage of track and field events, providing accurate timing at a fraction of the cost of traditional timing systems.",
-        github: "https://github.com/Sburleson/TrackTiming",
-        images: ["/images/ml1.png", "/images/ml2.png"]
-        }
-    ];
+		{
+			title: "Statistics Website",
+			description:
+				"A website that enables players to upload Replay files to cloud storage, process them through a Rust based script, and display the extracted data in a meaningful way.",
+			github: "https://github.com/Sburleson/WoTFirebase",
+			images: [`${base}/images/StatsWebsite.png`],
+			website: "https://wot-insight.web.app"
+		},
+		{
+			title: "Track & Field Timing using machine learning",
+			description:
+				"A project that uses machine learning to analyze video footage of track and field events, providing accurate timing at a fraction of the cost of traditional timing systems.",
+			github: "https://github.com/Sburleson/TrackTiming",
+			images: [`${base}/images/Timing.png`, `${base}/images/Timing2.png`]
+		}
+	];
 
     let skills = [
     { name: "JavaScript", icon: "logos:javascript" },
@@ -153,7 +156,7 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <img src="/MePic2.png" alt="Profile Picture" />
+    <img src="{base}/images/MePic2.png" alt="Profile Picture" />
   </aside>
 
   <!-- Main Content -->

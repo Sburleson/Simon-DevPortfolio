@@ -1,5 +1,6 @@
 {
 	"name": "my-portfolio",
+	"homepage": "https://github.com/Sburleson/Sburleson.github.io",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -7,6 +8,8 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -29,6 +32,7 @@
 		"@iconify-icons/fa6-brands": "^1.2.11",
 		"@iconify-icons/simple-icons": "^1.2.74",
 		"@iconify/svelte": "^5.0.0",
+		"gh-pages": "^6.3.0",
 		"iconify": "^1.4.0"
 	}
 }
