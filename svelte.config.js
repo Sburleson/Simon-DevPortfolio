@@ -8,7 +8,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '/simon-portfolio', // root domain, leave blank
+			base: '/Simon-DevPortfolio', // root domain, leave blank
 		}
 	}
 };
