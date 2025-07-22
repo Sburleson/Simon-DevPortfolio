@@ -1,15 +1,19 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-/** @type {import('@sveltejs/kit').Config} */
+// Replace this with your actual repo name
+const dev = process.env.NODE_ENV === 'development';
+const repoName = 'Simon-DevPortfolio';
+
 const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '', // root domain, leave blank
-		}
+			base: dev ? '' : `/${repoName}`,
+		},
+		appDir: 'app', // optional, to avoid long hashed names if you want
 	}
 };
 
