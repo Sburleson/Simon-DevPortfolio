@@ -209,7 +209,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:simon@example.com">simon@example.com</a></p>
+      <p><Icon icon="mdi:gmail" width="16" height="16" /> Email: <a href="simonb9th@gmail.com">simonb9th@gmail.com</a></p>
     </section>
   </main>
 </div>
