@@ -17,7 +17,7 @@
 			website: "https://wot-insight.web.app"
 		},
 		{
-			title: "Track & Field Timing using machine learning",
+			title: "Track & Field Timing using Machine Learning",
 			description:
 				"A project that uses machine learning to analyze video footage of track and field events, providing accurate timing at a fraction of the cost of traditional timing systems.",
 			github: "https://github.com/Sburleson/TrackTiming",
