@@ -13,7 +13,7 @@
 			description:
 				"A website that enables players to upload Replay files to cloud storage, process them through a Rust based script, and display the extracted data in a meaningful way.",
 			github: "https://github.com/Sburleson/WoTFirebase",
-			images: [`${base}/images/StatsWebsite.png`,`${base}/images/3DGraph.png`,`${base}/images/Heatmap.png`],
+			images: [`${base}/images/StatsWebsite.png`, `${base}/images/3DGraph.png`, `${base}/images/Heatmap.png`],
 			website: "https://wot-insight.web.app"
 		},
 		{
